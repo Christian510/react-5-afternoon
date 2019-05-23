@@ -51,23 +51,23 @@ function reducer(state = initialState, action) {
         case UPDATE_COST:
             return Object.assign({}, state, { updateCost: action.payload });
         case UPDATE_DOWNPAYMENT:
-            return Object.assign({}, state, { updatePayment: action.payload });
+            return Object.assign({}, state, { downPayment: action.payload });
         case UPDATE_CREDIT:
-            return Object.assign({}, state, {updateCredit : action.payload });
+            return Object.assign({}, state, { updateCredit: action.payload });
         case UPDATE_HISTORY:
-            return Object.assign({}, state, { updateHistory: action.payload});
+            return Object.assign({}, state, { updateHistory: action.payload });
         case UPDATE_ADDRESS_ONE:
-            return Object.assign({}, state, { updateAddressOne: action.payload});
+            return Object.assign({}, state, { updateAddressOne: action.payload });
         case UPDATE_ADDRESS_TWO:
-            return Object.assign({}, state, { updateAddressTwo: action.payload});
+            return Object.assign({}, state, { updateAddressTwo: action.payload });
         case UPDATE_ADDRESS_THREE:
-            return Object.assign({}, state, { updateAddressThree: action.payload});
+            return Object.assign({}, state, { updateAddressThree: action.payload });
         case UPDATE_FIRST_NAME:
-            return Object.assign({}, state, { updateFirstName: action.payload});
+            return Object.assign({}, state, { updateFirstName: action.payload });
         case UPDATE_LAST_NAME:
-            return Object.assign({}, state, { updateLastName: action.payload});
+            return Object.assign({}, state, { updateLastName: action.payload });
         case UPDATE_EMAIL:
-            return Object.assign({}, state, { updateEmail: action.payload});
+            return Object.assign({}, state, { updateEmail: action.payload });
 
         default: return state;
     }
@@ -112,66 +112,66 @@ export function updateRealStateAgent(agent) {
     }
 }
 
-export function updateCost ( cost ) {
+export function updateCost(cost) {
     return {
         type: UPDATE_COST,
-            payload: cost
+        payload: cost
     }
 }
-export function UPDATE_DOWNPAYMENT ( downPayment ) {
+export function UPDATE_DOWNPAYMENT(downPayment) {
     return {
         type: UPDATE_DOWNPAYMENT,
-            payload: downPayment
+        payload: downPayment
     }
 }
-export function UPDATE_CREDIT ( credit ) {
+export function UPDATE_CREDIT(credit) {
     return {
         type: UPDATE_CREDIT,
-            payload: credit
+        payload: credit
     }
 }
-export function UPDATE_HISTORY ( history ) {
+export function UPDATE_HISTORY(history) {
     return {
         type: UPDATE_HISTORY,
-            payload: history
+        payload: history
     }
 }
-export function UPDATE_ADDRESS_ONE ( addressOne ) {
+export function UPDATE_ADDRESS_ONE(addressOne) {
     return {
         type: UPDATE_ADDRESS_ONE,
-            payload: addressOne
+        payload: addressOne
     }
 }
-export function UPDATE_ADDRESS_TWO (addressTwo) {
+export function UPDATE_ADDRESS_TWO(addressTwo) {
     return {
         type: UPDATE_ADDRESS_TWO,
-            payload: addressTwo
+        payload: addressTwo
     }
 }
-export function UPDATE_ADDRESS_THREE ( addressThree ) {
+export function UPDATE_ADDRESS_THREE(addressThree) {
     return {
         type: UPDATE_ADDRESS_THREE,
-            payload: addressThree
+        payload: addressThree
     }
 }
-export function UPDATE_FIRST_NAME ( firstName ) {
+export function UPDATE_FIRST_NAME(firstName) {
     return {
         type: UPDATE_FIRST_NAME,
-            payload: firstName
+        payload: firstName
     }
 }
 
-export function UPDATE_LAST_NAME ( lastName ) {
+export function UPDATE_LAST_NAME(lastName) {
     return {
         type: UPDATE_LAST_NAME,
-            payload: lastName
+        payload: lastName
     }
 }
 
-export function UPDATE_EMAIL ( email ) {
+export function UPDATE_EMAIL(email) {
     return {
         type: UPDATE_EMAIL,
-            payload: email
+        payload: email
     }
 }
 
